@@ -12,10 +12,6 @@ Public Class Form1
     Dim subTotal As Double = 0
     Dim taxSubTotal As Double = 0
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Public Sub inputData(ByRef clientName As String, ByRef cableFeet As String)
 
         clientName = txtCompanyName.Text
@@ -42,6 +38,20 @@ Public Class Form1
         inputData(clientName, cableFeet)
         calcCost(cableFeet, subTotal, taxCost, finalBill)
         fBill(clientName, finalBill)
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+
+        txtCompanyName.Text = ""
+        txtCableFeet.Text = ""
+        lblResult.Text = ""
+
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+
+        Close()
 
     End Sub
 End Class

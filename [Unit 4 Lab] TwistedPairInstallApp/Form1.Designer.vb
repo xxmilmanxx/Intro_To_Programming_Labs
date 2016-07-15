@@ -28,6 +28,8 @@ Partial Class Form1
         Me.txtCompanyName = New System.Windows.Forms.TextBox()
         Me.txtCableFeet = New System.Windows.Forms.TextBox()
         Me.btnAnswer = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnClear = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblClientName
@@ -35,10 +37,9 @@ Partial Class Form1
         Me.lblClientName.AutoSize = True
         Me.lblClientName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblClientName.ForeColor = System.Drawing.Color.White
-        Me.lblClientName.Location = New System.Drawing.Point(165, 158)
-        Me.lblClientName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblClientName.Location = New System.Drawing.Point(110, 103)
         Me.lblClientName.Name = "lblClientName"
-        Me.lblClientName.Size = New System.Drawing.Size(249, 29)
+        Me.lblClientName.Size = New System.Drawing.Size(164, 20)
         Me.lblClientName.TabIndex = 0
         Me.lblClientName.Text = "Your Company Name:"
         '
@@ -47,69 +48,88 @@ Partial Class Form1
         Me.lblFeet.AutoSize = True
         Me.lblFeet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFeet.ForeColor = System.Drawing.Color.White
-        Me.lblFeet.Location = New System.Drawing.Point(90, 306)
-        Me.lblFeet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblFeet.Location = New System.Drawing.Point(60, 199)
         Me.lblFeet.Name = "lblFeet"
-        Me.lblFeet.Size = New System.Drawing.Size(324, 29)
+        Me.lblFeet.Size = New System.Drawing.Size(210, 20)
         Me.lblFeet.TabIndex = 1
-        Me.lblFeet.Text = "How many feed do you need:"
+        Me.lblFeet.Text = "How many feet do you need:"
         '
         'lblResult
         '
         Me.lblResult.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblResult.ForeColor = System.Drawing.Color.White
-        Me.lblResult.Location = New System.Drawing.Point(32, 418)
-        Me.lblResult.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblResult.Location = New System.Drawing.Point(21, 272)
         Me.lblResult.Name = "lblResult"
-        Me.lblResult.Size = New System.Drawing.Size(682, 30)
+        Me.lblResult.Size = New System.Drawing.Size(455, 41)
         Me.lblResult.TabIndex = 2
         '
         'txtCompanyName
         '
         Me.txtCompanyName.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.txtCompanyName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCompanyName.Location = New System.Drawing.Point(423, 162)
-        Me.txtCompanyName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtCompanyName.Location = New System.Drawing.Point(282, 105)
         Me.txtCompanyName.Name = "txtCompanyName"
-        Me.txtCompanyName.Size = New System.Drawing.Size(223, 35)
+        Me.txtCompanyName.Size = New System.Drawing.Size(150, 26)
         Me.txtCompanyName.TabIndex = 3
         '
         'txtCableFeet
         '
         Me.txtCableFeet.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.txtCableFeet.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCableFeet.Location = New System.Drawing.Point(420, 306)
-        Me.txtCableFeet.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtCableFeet.Location = New System.Drawing.Point(280, 199)
         Me.txtCableFeet.Name = "txtCableFeet"
-        Me.txtCableFeet.Size = New System.Drawing.Size(223, 35)
+        Me.txtCableFeet.Size = New System.Drawing.Size(150, 26)
         Me.txtCableFeet.TabIndex = 4
         '
         'btnAnswer
         '
         Me.btnAnswer.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.btnAnswer.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAnswer.Location = New System.Drawing.Point(314, 512)
-        Me.btnAnswer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnAnswer.Location = New System.Drawing.Point(64, 333)
         Me.btnAnswer.Name = "btnAnswer"
-        Me.btnAnswer.Size = New System.Drawing.Size(138, 65)
+        Me.btnAnswer.Size = New System.Drawing.Size(92, 42)
         Me.btnAnswer.TabIndex = 5
         Me.btnAnswer.Text = "&ANSWER"
         Me.btnAnswer.UseVisualStyleBackColor = False
         '
+        'btnExit
+        '
+        Me.btnExit.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(365, 333)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(92, 42)
+        Me.btnExit.TabIndex = 6
+        Me.btnExit.Text = "&EXIT"
+        Me.btnExit.UseVisualStyleBackColor = False
+        '
+        'btnClear
+        '
+        Me.btnClear.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(213, 333)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(92, 42)
+        Me.btnClear.TabIndex = 7
+        Me.btnClear.Text = "&CLEAR"
+        Me.btnClear.UseVisualStyleBackColor = False
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AcceptButton = Me.btnAnswer
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.HotTrack
-        Me.ClientSize = New System.Drawing.Size(822, 622)
+        Me.ClientSize = New System.Drawing.Size(548, 404)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnAnswer)
         Me.Controls.Add(Me.txtCableFeet)
         Me.Controls.Add(Me.txtCompanyName)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.lblFeet)
         Me.Controls.Add(Me.lblClientName)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Data Communications Corp"
@@ -124,4 +144,6 @@ Partial Class Form1
     Friend WithEvents txtCompanyName As TextBox
     Friend WithEvents txtCableFeet As TextBox
     Friend WithEvents btnAnswer As Button
+    Friend WithEvents btnExit As Button
+    Friend WithEvents btnClear As Button
 End Class
