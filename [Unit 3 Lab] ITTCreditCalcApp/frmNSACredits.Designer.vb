@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class frmNSACredits
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -39,10 +39,9 @@ Partial Class Form1
         '
         Me.lblInfo.AutoSize = True
         Me.lblInfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblInfo.Location = New System.Drawing.Point(39, 14)
-        Me.lblInfo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblInfo.Location = New System.Drawing.Point(26, 9)
         Me.lblInfo.Name = "lblInfo"
-        Me.lblInfo.Size = New System.Drawing.Size(547, 29)
+        Me.lblInfo.Size = New System.Drawing.Size(358, 20)
         Me.lblInfo.TabIndex = 0
         Me.lblInfo.Text = "This calculator is based on a 90 credit completion."
         '
@@ -50,10 +49,9 @@ Partial Class Form1
         '
         Me.lblName.AutoSize = True
         Me.lblName.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.Location = New System.Drawing.Point(59, 79)
-        Me.lblName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblName.Location = New System.Drawing.Point(39, 51)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(186, 25)
+        Me.lblName.Size = New System.Drawing.Size(134, 17)
         Me.lblName.TabIndex = 1
         Me.lblName.Text = "What is your name?"
         Me.lblName.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -62,10 +60,9 @@ Partial Class Form1
         '
         Me.lblCreditsTaken.AutoSize = True
         Me.lblCreditsTaken.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCreditsTaken.Location = New System.Drawing.Point(59, 192)
-        Me.lblCreditsTaken.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCreditsTaken.Location = New System.Drawing.Point(39, 125)
         Me.lblCreditsTaken.Name = "lblCreditsTaken"
-        Me.lblCreditsTaken.Size = New System.Drawing.Size(315, 25)
+        Me.lblCreditsTaken.Size = New System.Drawing.Size(228, 17)
         Me.lblCreditsTaken.TabIndex = 2
         Me.lblCreditsTaken.Text = "How many credits have you taken?"
         Me.lblCreditsTaken.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -74,10 +71,9 @@ Partial Class Form1
         '
         Me.lblCreditsRemsining.AutoSize = True
         Me.lblCreditsRemsining.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCreditsRemsining.Location = New System.Drawing.Point(59, 312)
-        Me.lblCreditsRemsining.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblCreditsRemsining.Location = New System.Drawing.Point(39, 203)
         Me.lblCreditsRemsining.Name = "lblCreditsRemsining"
-        Me.lblCreditsRemsining.Size = New System.Drawing.Size(171, 25)
+        Me.lblCreditsRemsining.Size = New System.Drawing.Size(123, 17)
         Me.lblCreditsRemsining.TabIndex = 3
         Me.lblCreditsRemsining.Text = "Credits Remaining"
         Me.lblCreditsRemsining.TextAlign = System.Drawing.ContentAlignment.TopRight
@@ -85,38 +81,34 @@ Partial Class Form1
         'txtName
         '
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(119, 126)
-        Me.txtName.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtName.Location = New System.Drawing.Point(79, 82)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(270, 30)
+        Me.txtName.Size = New System.Drawing.Size(181, 23)
         Me.txtName.TabIndex = 4
         '
         'txtCreditsTaken
         '
         Me.txtCreditsTaken.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCreditsTaken.Location = New System.Drawing.Point(119, 244)
-        Me.txtCreditsTaken.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtCreditsTaken.Location = New System.Drawing.Point(79, 159)
         Me.txtCreditsTaken.Name = "txtCreditsTaken"
-        Me.txtCreditsTaken.Size = New System.Drawing.Size(270, 30)
+        Me.txtCreditsTaken.Size = New System.Drawing.Size(181, 23)
         Me.txtCreditsTaken.TabIndex = 5
         '
         'txtCreditsRemaining
         '
         Me.txtCreditsRemaining.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCreditsRemaining.Location = New System.Drawing.Point(119, 362)
-        Me.txtCreditsRemaining.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txtCreditsRemaining.Location = New System.Drawing.Point(79, 235)
         Me.txtCreditsRemaining.Name = "txtCreditsRemaining"
         Me.txtCreditsRemaining.ReadOnly = True
-        Me.txtCreditsRemaining.Size = New System.Drawing.Size(270, 30)
+        Me.txtCreditsRemaining.Size = New System.Drawing.Size(181, 23)
         Me.txtCreditsRemaining.TabIndex = 6
         '
         'btnResult
         '
         Me.btnResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnResult.Location = New System.Drawing.Point(44, 544)
-        Me.btnResult.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnResult.Location = New System.Drawing.Point(29, 354)
         Me.btnResult.Name = "btnResult"
-        Me.btnResult.Size = New System.Drawing.Size(128, 62)
+        Me.btnResult.Size = New System.Drawing.Size(85, 40)
         Me.btnResult.TabIndex = 7
         Me.btnResult.Text = "RESULT"
         Me.btnResult.UseVisualStyleBackColor = True
@@ -124,10 +116,9 @@ Partial Class Form1
         'btnExit
         '
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(392, 546)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnExit.Location = New System.Drawing.Point(261, 355)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(128, 62)
+        Me.btnExit.Size = New System.Drawing.Size(85, 40)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "EXIT"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -135,10 +126,9 @@ Partial Class Form1
         'btnClear
         '
         Me.btnClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnClear.Location = New System.Drawing.Point(213, 546)
-        Me.btnClear.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.btnClear.Location = New System.Drawing.Point(142, 355)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(128, 62)
+        Me.btnClear.Size = New System.Drawing.Size(85, 40)
         Me.btnClear.TabIndex = 9
         Me.btnClear.Text = "CLEAR"
         Me.btnClear.UseVisualStyleBackColor = True
@@ -146,21 +136,22 @@ Partial Class Form1
         'txtResults
         '
         Me.txtResults.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtResults.Location = New System.Drawing.Point(44, 411)
+        Me.txtResults.Location = New System.Drawing.Point(29, 267)
+        Me.txtResults.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.txtResults.Multiline = True
         Me.txtResults.Name = "txtResults"
         Me.txtResults.ReadOnly = True
         Me.txtResults.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtResults.Size = New System.Drawing.Size(476, 116)
+        Me.txtResults.Size = New System.Drawing.Size(319, 77)
         Me.txtResults.TabIndex = 10
         Me.txtResults.TabStop = False
         Me.txtResults.Visible = False
         '
-        'Form1
+        'frmNSACredits
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(603, 620)
+        Me.ClientSize = New System.Drawing.Size(402, 403)
         Me.Controls.Add(Me.txtResults)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnExit)
@@ -172,9 +163,8 @@ Partial Class Form1
         Me.Controls.Add(Me.lblCreditsTaken)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblInfo)
-        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.MaximumSize = New System.Drawing.Size(822, 676)
-        Me.Name = "Form1"
+        Me.MaximumSize = New System.Drawing.Size(553, 453)
+        Me.Name = "frmNSACredits"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ITT East Credit Calculator"
         Me.ResumeLayout(False)

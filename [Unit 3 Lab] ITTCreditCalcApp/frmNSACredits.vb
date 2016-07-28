@@ -3,7 +3,7 @@
 ' 7/7/2016
 
 
-Public Class Form1
+Public Class frmNSACredits
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         txtName.Text = ""
