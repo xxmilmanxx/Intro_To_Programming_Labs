@@ -33,18 +33,20 @@ Partial Class frmRegistration
         Me.cmboRegStatus = New System.Windows.Forms.ComboBox()
         Me.chkbxRegReading = New System.Windows.Forms.CheckBox()
         Me.chkbxRegAll = New System.Windows.Forms.CheckBox()
-        Me.chkbxDesign = New System.Windows.Forms.CheckBox()
+        Me.chkbxRegDesign = New System.Windows.Forms.CheckBox()
         Me.chkbxRegBusiness = New System.Windows.Forms.CheckBox()
         Me.chkbxRegComp = New System.Windows.Forms.CheckBox()
         Me.chkbxRegNSA = New System.Windows.Forms.CheckBox()
         Me.chkbxRegElectronics = New System.Windows.Forms.CheckBox()
         Me.rdoRegAge1729 = New System.Windows.Forms.RadioButton()
         Me.rdoRegAge3049 = New System.Windows.Forms.RadioButton()
-        Me.rdoRegAge5069 = New System.Windows.Forms.RadioButton()
-        Me.rdoRegAge7099 = New System.Windows.Forms.RadioButton()
         Me.btnRegSave = New System.Windows.Forms.Button()
         Me.btnRegClear = New System.Windows.Forms.Button()
         Me.btnRegExit = New System.Windows.Forms.Button()
+        Me.rdoRegAge7099 = New System.Windows.Forms.RadioButton()
+        Me.rdoRegAge5069 = New System.Windows.Forms.RadioButton()
+        Me.gpbxAge = New System.Windows.Forms.GroupBox()
+        Me.gpbxAge.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblRegInfo
@@ -157,16 +159,16 @@ Partial Class frmRegistration
         Me.chkbxRegAll.Text = "ALL"
         Me.chkbxRegAll.UseVisualStyleBackColor = True
         '
-        'chkbxDesign
+        'chkbxRegDesign
         '
-        Me.chkbxDesign.AutoSize = True
-        Me.chkbxDesign.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.chkbxDesign.Location = New System.Drawing.Point(334, 358)
-        Me.chkbxDesign.Name = "chkbxDesign"
-        Me.chkbxDesign.Size = New System.Drawing.Size(138, 21)
-        Me.chkbxDesign.TabIndex = 11
-        Me.chkbxDesign.Text = "Drafting && Design"
-        Me.chkbxDesign.UseVisualStyleBackColor = True
+        Me.chkbxRegDesign.AutoSize = True
+        Me.chkbxRegDesign.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.chkbxRegDesign.Location = New System.Drawing.Point(334, 358)
+        Me.chkbxRegDesign.Name = "chkbxRegDesign"
+        Me.chkbxRegDesign.Size = New System.Drawing.Size(138, 21)
+        Me.chkbxRegDesign.TabIndex = 11
+        Me.chkbxRegDesign.Text = "Drafting && Design"
+        Me.chkbxRegDesign.UseVisualStyleBackColor = True
         '
         'chkbxRegBusiness
         '
@@ -216,7 +218,7 @@ Partial Class frmRegistration
         '
         Me.rdoRegAge1729.AutoSize = True
         Me.rdoRegAge1729.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoRegAge1729.Location = New System.Drawing.Point(138, 199)
+        Me.rdoRegAge1729.Location = New System.Drawing.Point(9, 11)
         Me.rdoRegAge1729.Name = "rdoRegAge1729"
         Me.rdoRegAge1729.Size = New System.Drawing.Size(71, 21)
         Me.rdoRegAge1729.TabIndex = 16
@@ -228,37 +230,13 @@ Partial Class frmRegistration
         '
         Me.rdoRegAge3049.AutoSize = True
         Me.rdoRegAge3049.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoRegAge3049.Location = New System.Drawing.Point(138, 226)
+        Me.rdoRegAge3049.Location = New System.Drawing.Point(9, 38)
         Me.rdoRegAge3049.Name = "rdoRegAge3049"
         Me.rdoRegAge3049.Size = New System.Drawing.Size(71, 21)
         Me.rdoRegAge3049.TabIndex = 17
         Me.rdoRegAge3049.TabStop = True
         Me.rdoRegAge3049.Text = "30 - 49"
         Me.rdoRegAge3049.UseVisualStyleBackColor = True
-        '
-        'rdoRegAge5069
-        '
-        Me.rdoRegAge5069.AutoSize = True
-        Me.rdoRegAge5069.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoRegAge5069.Location = New System.Drawing.Point(256, 199)
-        Me.rdoRegAge5069.Name = "rdoRegAge5069"
-        Me.rdoRegAge5069.Size = New System.Drawing.Size(71, 21)
-        Me.rdoRegAge5069.TabIndex = 18
-        Me.rdoRegAge5069.TabStop = True
-        Me.rdoRegAge5069.Text = "50 - 69"
-        Me.rdoRegAge5069.UseVisualStyleBackColor = True
-        '
-        'rdoRegAge7099
-        '
-        Me.rdoRegAge7099.AutoSize = True
-        Me.rdoRegAge7099.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rdoRegAge7099.Location = New System.Drawing.Point(256, 226)
-        Me.rdoRegAge7099.Name = "rdoRegAge7099"
-        Me.rdoRegAge7099.Size = New System.Drawing.Size(71, 21)
-        Me.rdoRegAge7099.TabIndex = 19
-        Me.rdoRegAge7099.TabStop = True
-        Me.rdoRegAge7099.Text = "70 - 99"
-        Me.rdoRegAge7099.UseVisualStyleBackColor = True
         '
         'btnRegSave
         '
@@ -290,23 +268,56 @@ Partial Class frmRegistration
         Me.btnRegExit.Text = "EXIT"
         Me.btnRegExit.UseVisualStyleBackColor = True
         '
+        'rdoRegAge7099
+        '
+        Me.rdoRegAge7099.AutoSize = True
+        Me.rdoRegAge7099.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoRegAge7099.Location = New System.Drawing.Point(93, 36)
+        Me.rdoRegAge7099.Name = "rdoRegAge7099"
+        Me.rdoRegAge7099.Size = New System.Drawing.Size(71, 21)
+        Me.rdoRegAge7099.TabIndex = 19
+        Me.rdoRegAge7099.TabStop = True
+        Me.rdoRegAge7099.Text = "70 - 99"
+        Me.rdoRegAge7099.UseVisualStyleBackColor = True
+        '
+        'rdoRegAge5069
+        '
+        Me.rdoRegAge5069.AutoSize = True
+        Me.rdoRegAge5069.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rdoRegAge5069.Location = New System.Drawing.Point(93, 11)
+        Me.rdoRegAge5069.Name = "rdoRegAge5069"
+        Me.rdoRegAge5069.Size = New System.Drawing.Size(71, 21)
+        Me.rdoRegAge5069.TabIndex = 18
+        Me.rdoRegAge5069.TabStop = True
+        Me.rdoRegAge5069.Text = "50 - 69"
+        Me.rdoRegAge5069.UseVisualStyleBackColor = True
+        '
+        'gpbxAge
+        '
+        Me.gpbxAge.Controls.Add(Me.rdoRegAge7099)
+        Me.gpbxAge.Controls.Add(Me.rdoRegAge5069)
+        Me.gpbxAge.Controls.Add(Me.rdoRegAge3049)
+        Me.gpbxAge.Controls.Add(Me.rdoRegAge1729)
+        Me.gpbxAge.Location = New System.Drawing.Point(138, 188)
+        Me.gpbxAge.Name = "gpbxAge"
+        Me.gpbxAge.Size = New System.Drawing.Size(182, 67)
+        Me.gpbxAge.TabIndex = 23
+        Me.gpbxAge.TabStop = False
+        '
         'frmRegistration
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(515, 418)
+        Me.Controls.Add(Me.gpbxAge)
         Me.Controls.Add(Me.btnRegExit)
         Me.Controls.Add(Me.btnRegClear)
         Me.Controls.Add(Me.btnRegSave)
-        Me.Controls.Add(Me.rdoRegAge7099)
-        Me.Controls.Add(Me.rdoRegAge5069)
-        Me.Controls.Add(Me.rdoRegAge3049)
-        Me.Controls.Add(Me.rdoRegAge1729)
         Me.Controls.Add(Me.chkbxRegElectronics)
         Me.Controls.Add(Me.chkbxRegNSA)
         Me.Controls.Add(Me.chkbxRegComp)
         Me.Controls.Add(Me.chkbxRegBusiness)
-        Me.Controls.Add(Me.chkbxDesign)
+        Me.Controls.Add(Me.chkbxRegDesign)
         Me.Controls.Add(Me.chkbxRegAll)
         Me.Controls.Add(Me.chkbxRegReading)
         Me.Controls.Add(Me.cmboRegStatus)
@@ -321,6 +332,8 @@ Partial Class frmRegistration
         Me.Name = "frmRegistration"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmRegistration"
+        Me.gpbxAge.ResumeLayout(False)
+        Me.gpbxAge.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -337,16 +350,17 @@ Partial Class frmRegistration
     Friend WithEvents cmboRegStatus As ComboBox
     Friend WithEvents chkbxRegReading As CheckBox
     Friend WithEvents chkbxRegAll As CheckBox
-    Friend WithEvents chkbxDesign As CheckBox
+    Friend WithEvents chkbxRegDesign As CheckBox
     Friend WithEvents chkbxRegBusiness As CheckBox
     Friend WithEvents chkbxRegComp As CheckBox
     Friend WithEvents chkbxRegNSA As CheckBox
     Friend WithEvents chkbxRegElectronics As CheckBox
     Friend WithEvents rdoRegAge1729 As RadioButton
     Friend WithEvents rdoRegAge3049 As RadioButton
-    Friend WithEvents rdoRegAge5069 As RadioButton
-    Friend WithEvents rdoRegAge7099 As RadioButton
     Friend WithEvents btnRegSave As Button
     Friend WithEvents btnRegClear As Button
     Friend WithEvents btnRegExit As Button
+    Friend WithEvents rdoRegAge7099 As RadioButton
+    Friend WithEvents rdoRegAge5069 As RadioButton
+    Friend WithEvents gpbxAge As GroupBox
 End Class
